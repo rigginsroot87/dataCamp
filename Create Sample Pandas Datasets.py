@@ -15,3 +15,4 @@ print(auths.head())
 #show the datatypes of each column
 print(auths.dtypes)
 print(df.dtypes)
+print(df.columns)
