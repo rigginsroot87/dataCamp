@@ -35,7 +35,10 @@ print(df_dummy[yellows])
 #you can do it with dates too
 print(df_dummy[df_dummy["date"] > '2015-03-01'])
 
-#two filters
+#two filters for date
 print(df_dummy[(df_dummy["date"] > '2015-02-27')&(df_dummy["date"] <= '2015-03-02')])
-#or using np.logicaland, can use np.logical_or
+#or you can do the same thing using np.logicaland, can use np.logical_or
 print(df_dummy[np.logical_and(df_dummy["date"] > '2015-02-27', df_dummy["date"] <= '2015-03-02')])
+
+#you can do more using loc and iloc, but will deal with that in the indexes section
+
